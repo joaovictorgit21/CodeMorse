@@ -1,4 +1,9 @@
 const morseCodeMap = {
+    'Á': '.-','Ã': '.-','Â': '.-','À': '.-',
+    'É': '.','Ê': '.','È': '.',
+    'Í': '..','Ì': '..','Î': '..',
+    'Ó': '---','Ô': '---','Ò': '---','Õ': '---',
+    'Ú': '..-','Ù': '..-','Û': '..-', 'Ü': '..-',
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
     'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
     'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---',
@@ -40,11 +45,11 @@ const morseCodeMap = {
   function convertToText() {
     const inputMorse = document.getElementById('inputMorse').value;
     const text = morseToText(inputMorse);
-    document.getElementById('output').textContent = `Texto decodificado: ${text}`;
+    document.getElementById('output').textContent = `${text}`;
   }
 
 document.addEventListener('keypress', (e) => {
   if (e.key  === 'Enter') {
     convertToMorse();
   };
-});
+})

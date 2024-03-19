@@ -1,0 +1,27 @@
+.form-control{
+    top: 10rem;
+}
+
+body {
+    margin: 3rem !important;
+}
+
+.convertToText,
+.convertToMorse{
+    width: 25rem;
+    height: 3rem;
+    background-color: grey;
+    border-radius: 3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+}
+
+textarea {
+    text-align: center;
+}
+
+svg{
+    width: 3rem;
+}
