@@ -18,8 +18,12 @@ body {
     top: 2rem;
 }
 
+.
+
 textarea {
     text-align: center;
+    width: 25rem;
+    height: 10rem;
 }
 
 svg {

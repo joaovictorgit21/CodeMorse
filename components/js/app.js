@@ -1,27 +1,4 @@
 const morseCodeMap = {
-  Á: ".-",
-  Ã: ".-",
-  Â: ".-",
-  À: ".-",
-
-  É: ".",
-  Ê: ".",
-  È: ".",
-
-  Í: "..",
-  Ì: "..",
-  Î: "..",
-
-  Ó: "---",
-  Ô: "---",
-  Ò: "---",
-  Õ: "---",
-
-  Ú: "..-",
-  Ù: "..-",
-  Û: "..-",
-  Ü: "..-",
-
   A: ".-",
   B: "-...",
   C: "-.-.",
@@ -109,6 +86,7 @@ function convertToMorse() {
 function convertToText() {
   const inputMorse = document.getElementById("inputMorse").value;
   const text = morseToText(inputMorse);
+  document.getElementById("inputText").textContent = `${text}`;
   document.getElementById("output").textContent = `${text}`;
 }
 
